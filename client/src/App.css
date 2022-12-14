@@ -1,0 +1,365 @@
+.login-container {
+  background: rgba(255, 255, 255, 0.5);
+
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+
+  width: 520px;
+  max-width: 100vw;
+}
+
+.login-form {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 20px;
+}
+
+.login-button input {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-button input:hover {
+  background: #000;
+  color: #fff;
+}
+
+.login-input {
+
+  outline: none;
+
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 100%;
+}
+
+.login-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-input:focus {
+  outline: none;
+}
+
+.task-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.task-input {
+  width: 320px;
+}
+
+.task-input input {
+  color: #fff;
+  background-color: #000;
+
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  padding: 14px 32px 14px 16px;
+
+  width: 100%;
+
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  /* Sets font for the web app */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #fafafa;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  position: relative !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-credits {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.image-credits:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.todo-webapp {
+  /*Structures the background of the form which is in translucent white color*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 520px;
+  min-height: 600px;
+  max-height: 600px;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  overflow-y: auto;
+}
+
+h1 {
+  margin: 25px 0;
+  /* Edits the title of the todo web app*/
+  color: black;
+  font-size: 30px;
+}
+
+.complete {
+  text-decoration: line-through;
+  /* Adds a strikthrough the text on the task/list item when completed/clicked on*/
+  opacity: 0.4;
+}
+
+.listItem-form {
+  margin-bottom: 25px;
+  /* Sets some space between the task/list item and the bottom of the form*/
+}
+
+.listItem-button {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 14px 15px
+}
+
+.listItem-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.listItem-button.edit {
+  /* When editing, the color changes to red for the button */
+  background: darkred;
+  padding: 16px 22px;
+}
+
+.listItem-container {
+  /* Structures the container/box the form sits on */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.listItem-row {
+  /* Styles the small box constructed around each task/list item */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  background: rgb(9, 111, 0);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+
+  position: relative;
+  top: 15px;
+}
+
+.icons {
+  /* Styles the size of the icons for delete and edit */
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.remove-icon {
+  /* Styles the remove icon */
+  margin-right: 5px;
+  color: white;
+}
+
+.edit-icon {
+  /* Styles the edit icon */
+  color: white;
+}
+
+.save-icon {
+  /* Styles the save icon */
+  color: white;
+}
+
+.list-context {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+
+  /* Styles the application to be mobile friendly */
+
+  .clock-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 100vw;
+  }
+
+  .todo-webapp {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    max-height: fit-content;
+    overflow-x: hidden;
+
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .login-container {
+    margin: 0;
+    width: 100vw;
+    box-shadow: none;
+
+    border-radius: 0;
+  }
+
+  .list-context {
+    width: 100vw;
+  }
+
+  .listItem-input {
+    width: 240px;
+  }
+
+  .listItem-row {
+    width: 80%;
+  }
+
+  body {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    position: relative !important;
+  }
+
+  .image-credits {
+    display: none;
+  }
+}
+
+.clock-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 520px;
+  height: 60px;
+  font: 3em sans-serif;
+  color: white;
+  text-shadow: 0px 0px 15px #00ffff, 0px 0px 15px #00ffff, 0px 0px 15px #00ffff;
+}
+
+.warning {
+  background-color: darkred !important;
+  color: white !important;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.order-button {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 14px 15px
+}
+
+.order-button:hover,
+.time-order:hover {
+  background: #000;
+  color: #fff;
+}
+
+.time-order {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 14px 15px
+}
